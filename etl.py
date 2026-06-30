@@ -13,6 +13,8 @@ NOTION_VERSION = "2022-06-28"  # stable enough for basic CRUD
 
 # ---- Helpers ----------------------------------------------------------------
 
+print("Hello")
+
 def notion_headers() -> Dict[str, str]:
     if not NOTION_TOKEN:
         raise RuntimeError("Missing NOTION_TOKEN (set it as a GitHub Secret).")
